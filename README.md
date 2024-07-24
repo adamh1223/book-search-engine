@@ -1,4 +1,3 @@
-
 ```
 book-search-engine
 ├─ .git
@@ -80,6 +79,83 @@ book-search-engine
    │  │  ├─ index.js
    │  │  └─ user-routes.js
    │  └─ index.js
+   ├─ server.js
+   └─ utils
+      └─ auth.js
+
+```
+
+```
+book-search-engine
+├─ .git
+│  ├─ COMMIT_EDITMSG
+│  ├─ FETCH_HEAD
+│  ├─ HEAD
+│  ├─ ORIG_HEAD
+│  ├─ config
+│  ├─ description
+├─ .gitignore
+├─ .npmrc
+├─ README.md
+├─ client
+│  ├─ .eslintrc.cjs
+│  ├─ .gitignore
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ App.jsx
+│  │  ├─ apolloClient.js
+│  │  ├─ assets
+│  │  │  └─ react.svg
+│  │  ├─ components
+│  │  │  ├─ Book.jsx
+│  │  │  ├─ LoginForm.jsx
+│  │  │  ├─ Navbar.jsx
+│  │  │  └─ SignupForm.jsx
+│  │  ├─ contexts
+│  │  │  └─ BooksContext.jsx
+│  │  ├─ graphql
+│  │  │  ├─ mutations.js
+│  │  │  └─ queries.js
+│  │  ├─ index.js
+│  │  ├─ main.jsx
+│  │  ├─ pages
+│  │  │  ├─ Home.jsx
+│  │  │  ├─ Login.jsx
+│  │  │  ├─ SavedBooks.jsx
+│  │  │  ├─ SearchBooks.jsx
+│  │  │  └─ Signup.jsx
+│  │  └─ utils
+│  │     ├─ API.js
+│  │     ├─ auth.js
+│  │     └─ localStorage.js
+│  └─ vite.config.js
+├─ package-lock.json
+├─ package.json
+└─ server
+   ├─ .gitignore
+   ├─ config
+   │  └─ connection.js
+   ├─ controllers
+   │  └─ user-controller.js
+   ├─ models
+   │  ├─ Book.js
+   │  ├─ User.js
+   │  └─ index.js
+   ├─ package-lock.json
+   ├─ package.json
+   ├─ routes
+   │  ├─ api
+   │  │  ├─ index.js
+   │  │  └─ user-routes.js
+   │  └─ index.js
+   ├─ schemas
+   │  ├─ resolvers.js
+   │  └─ schema.js
    ├─ server.js
    └─ utils
       └─ auth.js
