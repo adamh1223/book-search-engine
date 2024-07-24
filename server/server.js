@@ -12,8 +12,6 @@ const startServer = async () => {
 
   // Start the Apollo Server
   await server.start();
-
-  // Apply Apollo GraphQL middleware to the Express app
   server.applyMiddleware({ app, path: "/graphql" });
 
   // Serve static files from the React app
@@ -24,7 +22,7 @@ const startServer = async () => {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 
-  // Start the Express server with the port from environment variables or fallback to 3001
+  // Start the Express server
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
     console.log(
@@ -33,5 +31,4 @@ const startServer = async () => {
   });
 };
 
-// Call the async function to start the server
 startServer();
