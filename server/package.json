@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -12,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^8.0.0"
+    "mongoose": "^8.5.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "description": ""
 }
