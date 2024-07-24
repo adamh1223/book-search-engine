@@ -1,17 +1,13 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Login from './pages/Login';
-// Import other components/pages
+import { Route, Routes } from 'react-router-dom';
+import SearchBooks from './pages/SearchBooks';
+import SavedBooks from './pages/SavedBooks';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        {/* Define other routes here */}
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<SearchBooks />} />
+      <Route path="/saved" element={<SavedBooks />} />
+    </Routes>
   );
 }
 
